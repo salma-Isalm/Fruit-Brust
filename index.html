@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit-Brust | Save And Fresh Fruit Daliver</title>
+
+    <!-- fav Icon link -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- DaisyUi LInk -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+
+     <!-- Tailwind cdn LInk -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- gogle font lato -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- font-Awesome -->
+<script src="https://kit.fontawesome.com/8d40faf00e.js" crossorigin="anonymous"></script>
+
+<!-- Css custom cluse -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+              "banner-1": "url('./images/banner1.png')",
+              "banner-2": "url('./images/banner2.png')",
+              "banner-3": "url('./images/banner3.png')",
+              "banner-4": "url('./images/banner4.png')",
+            },
+        },
+      },
+    };
+  </script>
+
+  <!-- custom style -->
+  <style>
+    .lato{
+        font-family: 'Lato', sans-serif;
+    }
+  </style>
+</head>
+<body class="lato">
+    <!-- header section -->
+    <header class="container mx-auto">
+        <!-- navbar  -->
+        <nav class=" px-4 md:px-8 lg:mx-16  lg:mt-5 lg:bg-red-500 py-4 rounded-full">
+            <div class="flex items-center justify-between">
+         
+             
+              <!-- manu section -->
+              <div class="hidden lg:flex">
+               <ul class="flex gap-4 font-normal lg:text-white text-sm md:text-base">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">All Fruits</a></li>
+               </ul>
+               
+              </div>
+              <div class="flex items-center">
+                <img class="w-12 object-fill" src="images/logo.png" alt="">
+                <a href="#" class=" text-black lg:text-white text-2xl lg:text-4xl font-extrabold pl-1">Fruit Burst</a>
+        
+              </div>
+                <!-- bitton section consult -->
+              <div class="hidden lg:flex justify-end ">
+            
+                    <input type="text" placeholder="Search " class="input input-bordered w-24 md:w-auto"  />
+              
+              </div>
+              <!-- small device manu -->
+              <div class="dropdown flex lg:hidden">
+                <label tabindex="0" class="btn btn-ghost px-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="inline-block w-5 h-5 stroke-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </label>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-5 w-52  font-bold text-black text-sm md:text-base"
+                >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">All Fruits</a></li>
+                </ul>
+                <div class="form-control hidden lg:flex">
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                  </div>
+              </div>
+            </div>
+          </nav> 
+          <!-- bennar section -->
+          <section class="px-4 md:px-8 lg:mx-16 lg:mt-6">
+              <!-- carosol section -->
+
+
+              <div class="carousel w-full">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img src="images/banner1.png" class="w-full" />
+              
+              
+                  <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                      <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                      <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                      <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a> 
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+
+              </div>
+          </section>
+    </header>
+    
+</body>
+</html>
